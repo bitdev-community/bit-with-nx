@@ -1,0 +1,635 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.1.3",
+  "deps": {
+    "@swc/helpers": "0.5.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.15.0",
+    "tslib": "^2.3.0",
+    "@babel/core": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "@nx/cypress": "17.1.3",
+    "@nx/eslint-plugin": "17.1.3",
+    "@nx/js": "17.1.3",
+    "@nx/react": "17.1.3",
+    "@nx/vite": "17.1.3",
+    "@nx/workspace": "17.1.3",
+    "@swc/cli": "~0.1.62",
+    "@swc/core": "1.3.87",
+    "@testing-library/react": "14.0.0",
+    "@types/node": "18.14.2",
+    "@types/react": "18.2.24",
+    "@types/react-dom": "18.2.9",
+    "@typescript-eslint/eslint-plugin": "6.12.0",
+    "@typescript-eslint/parser": "6.12.0",
+    "@vitejs/plugin-react": "~4.0.0",
+    "@vitest/coverage-c8": "~0.32.0",
+    "@vitest/ui": "~0.32.0",
+    "cypress": "^13.0.0",
+    "eslint": "~8.46.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-cypress": "^2.13.4",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "jsdom": "~22.1.0",
+    "nx": "17.1.3",
+    "prettier": "^2.6.2",
+    "typescript": "5.2.2",
+    "vite": "~4.3.9",
+    "vitest": "~0.32.0",
+    "@nx/eslint": "17.1.3"
+  },
+  "pathMappings": {
+    "@react-monorepo/orders": [
+      "libs/orders/src/index.ts"
+    ],
+    "@react-monorepo/products": [
+      "libs/products/src/index.ts"
+    ],
+    "@react-monorepo/shared-ui": [
+      "libs/shared/ui/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "react-store-e2e": [
+        {
+          "file": "apps/react-store-e2e/.eslintrc.json",
+          "hash": "14060216369337943343"
+        },
+        {
+          "file": "apps/react-store-e2e/cypress.config.ts",
+          "hash": "3631011454240625899",
+          "deps": [
+            "npm:cypress",
+            "npm:@nx/cypress"
+          ]
+        },
+        {
+          "file": "apps/react-store-e2e/project.json",
+          "hash": "16784611917706119391"
+        },
+        {
+          "file": "apps/react-store-e2e/src/e2e/app.cy.ts",
+          "hash": "13827875189348043160"
+        },
+        {
+          "file": "apps/react-store-e2e/src/fixtures/example.json",
+          "hash": "11614668686582597233"
+        },
+        {
+          "file": "apps/react-store-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/react-store-e2e/src/support/commands.ts",
+          "hash": "7314691991044890572"
+        },
+        {
+          "file": "apps/react-store-e2e/src/support/e2e.ts",
+          "hash": "3666078656922506009"
+        },
+        {
+          "file": "apps/react-store-e2e/tsconfig.json",
+          "hash": "1788248097864730386"
+        }
+      ],
+      "react-store": [
+        {
+          "file": "apps/react-store/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/react-store/index.html",
+          "hash": "9170198764797078058"
+        },
+        {
+          "file": "apps/react-store/project.json",
+          "hash": "11828144712335992943"
+        },
+        {
+          "file": "apps/react-store/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/react-store/src/app/app.module.css",
+          "hash": "8887387885984320532"
+        },
+        {
+          "file": "apps/react-store/src/app/app.spec.tsx",
+          "hash": "9252710286954879785",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/react-store/src/app/app.tsx",
+          "hash": "4181782676432678139",
+          "deps": [
+            "npm:react-router-dom",
+            "products",
+            "orders"
+          ]
+        },
+        {
+          "file": "apps/react-store/src/app/nx-welcome.tsx",
+          "hash": "4389251527819925043"
+        },
+        {
+          "file": "apps/react-store/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/react-store/src/main.tsx",
+          "hash": "7502306523048404571",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/react-store/src/styles.css",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/react-store/tsconfig.app.json",
+          "hash": "7232119452847825095"
+        },
+        {
+          "file": "apps/react-store/tsconfig.json",
+          "hash": "11166545116916107487"
+        },
+        {
+          "file": "apps/react-store/tsconfig.spec.json",
+          "hash": "10880209246771498435"
+        },
+        {
+          "file": "apps/react-store/vite.config.ts",
+          "hash": "3563884664937323419",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "shared-ui": [
+        {
+          "file": "libs/shared/ui/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/shared/ui/.eslintrc.json",
+          "hash": "15946965712701950674"
+        },
+        {
+          "file": "libs/shared/ui/README.md",
+          "hash": "1231730878046824986"
+        },
+        {
+          "file": "libs/shared/ui/project.json",
+          "hash": "13392249565001208253"
+        },
+        {
+          "file": "libs/shared/ui/src/index.ts",
+          "hash": "15682517005854060669"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/shared-ui.module.css",
+          "hash": "125145030238681982"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/shared-ui.spec.tsx",
+          "hash": "7088882830380788656",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "libs/shared/ui/src/lib/shared-ui.tsx",
+          "hash": "17983461681845798350"
+        },
+        {
+          "file": "libs/shared/ui/tsconfig.json",
+          "hash": "17752339934368557238"
+        },
+        {
+          "file": "libs/shared/ui/tsconfig.lib.json",
+          "hash": "15322717985845125222"
+        },
+        {
+          "file": "libs/shared/ui/tsconfig.spec.json",
+          "hash": "14243795351211638914"
+        },
+        {
+          "file": "libs/shared/ui/vite.config.ts",
+          "hash": "15051633398143282063",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "inventory": [
+        {
+          "file": "apps/inventory/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/inventory/index.html",
+          "hash": "15624097634917263802"
+        },
+        {
+          "file": "apps/inventory/project.json",
+          "hash": "17543064718126658177"
+        },
+        {
+          "file": "apps/inventory/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/inventory/src/app/app.module.css",
+          "hash": "8887387885984320532"
+        },
+        {
+          "file": "apps/inventory/src/app/app.spec.tsx",
+          "hash": "537765181238638739",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/inventory/src/app/app.tsx",
+          "hash": "16202918411038504236",
+          "deps": [
+            "products"
+          ]
+        },
+        {
+          "file": "apps/inventory/src/app/nx-welcome.tsx",
+          "hash": "4389251527819925043"
+        },
+        {
+          "file": "apps/inventory/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/inventory/src/main.tsx",
+          "hash": "4731961929376199421",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/inventory/src/styles.css",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/inventory/tsconfig.app.json",
+          "hash": "7232119452847825095"
+        },
+        {
+          "file": "apps/inventory/tsconfig.json",
+          "hash": "11166545116916107487"
+        },
+        {
+          "file": "apps/inventory/tsconfig.spec.json",
+          "hash": "10880209246771498435"
+        },
+        {
+          "file": "apps/inventory/vite.config.ts",
+          "hash": "13044025882577351306",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "inventory-e2e": [
+        {
+          "file": "apps/inventory-e2e/.eslintrc.json",
+          "hash": "14060216369337943343"
+        },
+        {
+          "file": "apps/inventory-e2e/cypress.config.ts",
+          "hash": "3631011454240625899",
+          "deps": [
+            "npm:cypress",
+            "npm:@nx/cypress"
+          ]
+        },
+        {
+          "file": "apps/inventory-e2e/project.json",
+          "hash": "12749641010530148762"
+        },
+        {
+          "file": "apps/inventory-e2e/src/e2e/app.cy.ts",
+          "hash": "15799655912679458600"
+        },
+        {
+          "file": "apps/inventory-e2e/src/fixtures/example.json",
+          "hash": "11614668686582597233"
+        },
+        {
+          "file": "apps/inventory-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/inventory-e2e/src/support/commands.ts",
+          "hash": "7314691991044890572"
+        },
+        {
+          "file": "apps/inventory-e2e/src/support/e2e.ts",
+          "hash": "3666078656922506009"
+        },
+        {
+          "file": "apps/inventory-e2e/tsconfig.json",
+          "hash": "1788248097864730386"
+        }
+      ],
+      "orders": [
+        {
+          "file": "libs/orders/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/orders/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/orders/README.md",
+          "hash": "15410685183069123632"
+        },
+        {
+          "file": "libs/orders/project.json",
+          "hash": "9073923981524535854"
+        },
+        {
+          "file": "libs/orders/src/index.ts",
+          "hash": "5710020841368758985"
+        },
+        {
+          "file": "libs/orders/src/lib/order-list/order-list.module.css",
+          "hash": "125145030238681982"
+        },
+        {
+          "file": "libs/orders/src/lib/order-list/order-list.spec.tsx",
+          "hash": "2797398270072604526",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "libs/orders/src/lib/order-list/order-list.tsx",
+          "hash": "4218406186679255757"
+        },
+        {
+          "file": "libs/orders/src/lib/orders.module.css",
+          "hash": "125145030238681982"
+        },
+        {
+          "file": "libs/orders/src/lib/orders.spec.tsx",
+          "hash": "9128004178449829494",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "libs/orders/src/lib/orders.tsx",
+          "hash": "1066573297794077245"
+        },
+        {
+          "file": "libs/orders/tsconfig.json",
+          "hash": "17066586429726994950"
+        },
+        {
+          "file": "libs/orders/tsconfig.lib.json",
+          "hash": "10729871428936955739"
+        },
+        {
+          "file": "libs/orders/tsconfig.spec.json",
+          "hash": "14243795351211638914"
+        },
+        {
+          "file": "libs/orders/vite.config.ts",
+          "hash": "13886592416607735330",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "products": [
+        {
+          "file": "libs/products/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/products/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/products/README.md",
+          "hash": "10584224410186656541"
+        },
+        {
+          "file": "libs/products/project.json",
+          "hash": "6662806318918548818"
+        },
+        {
+          "file": "libs/products/src/index.ts",
+          "hash": "939701467347636783"
+        },
+        {
+          "file": "libs/products/src/lib/product-list/product-list.module.css",
+          "hash": "125145030238681982"
+        },
+        {
+          "file": "libs/products/src/lib/product-list/product-list.spec.tsx",
+          "hash": "11955171473347939056",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "libs/products/src/lib/product-list/product-list.tsx",
+          "hash": "9143608286803504651",
+          "deps": [
+            "orders"
+          ]
+        },
+        {
+          "file": "libs/products/src/lib/products.module.css",
+          "hash": "125145030238681982"
+        },
+        {
+          "file": "libs/products/src/lib/products.spec.tsx",
+          "hash": "16818468273304273545",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "libs/products/src/lib/products.tsx",
+          "hash": "10788856454962019719"
+        },
+        {
+          "file": "libs/products/tsconfig.json",
+          "hash": "17066586429726994950"
+        },
+        {
+          "file": "libs/products/tsconfig.lib.json",
+          "hash": "10729871428936955739"
+        },
+        {
+          "file": "libs/products/tsconfig.spec.json",
+          "hash": "14243795351211638914"
+        },
+        {
+          "file": "libs/products/vite.config.ts",
+          "hash": "1879873648043933406",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".bitmap",
+        "hash": "4520599317922702637"
+      },
+      {
+        "file": ".devcontainer/devcontainer.json",
+        "hash": "336804229751760731"
+      },
+      {
+        "file": ".prettierrc.cjs",
+        "hash": "366299397762255272"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "10133283755033087194"
+      },
+      {
+        "file": "README.md",
+        "hash": "11746522790854363064"
+      },
+      {
+        "file": "bit-with-nx/envs/.eslintrc.json",
+        "hash": "3093829066248861740"
+      },
+      {
+        "file": "bit-with-nx/envs/my-react-env/config/eslintrc.js",
+        "hash": "9945076982892349322"
+      },
+      {
+        "file": "bit-with-nx/envs/my-react-env/config/jest.config.js",
+        "hash": "5637021650674041829"
+      },
+      {
+        "file": "bit-with-nx/envs/my-react-env/config/prettier.config.js",
+        "hash": "14787644750900719149"
+      },
+      {
+        "file": "bit-with-nx/envs/my-react-env/config/tsconfig.json",
+        "hash": "15463520542092862734"
+      },
+      {
+        "file": "bit-with-nx/envs/my-react-env/config/webpack.config.ts",
+        "hash": "16034612845825256453"
+      },
+      {
+        "file": "bit-with-nx/envs/my-react-env/env.jsonc",
+        "hash": "17597509536777364407"
+      },
+      {
+        "file": "bit-with-nx/envs/my-react-env/index.ts",
+        "hash": "10205594030186156218"
+      },
+      {
+        "file": "bit-with-nx/envs/my-react-env/my-react-env.bit-env.ts",
+        "hash": "9718260119417119425"
+      },
+      {
+        "file": "bit-with-nx/envs/my-react-env/preview/host-dependencies.ts",
+        "hash": "2977091223587321921"
+      },
+      {
+        "file": "bit-with-nx/envs/my-react-env/preview/mounter.tsx",
+        "hash": "14689066569245496126"
+      },
+      {
+        "file": "bit-with-nx/envs/my-react-env/types/asset.d.ts",
+        "hash": "5097532550247371449"
+      },
+      {
+        "file": "bit-with-nx/envs/my-react-env/types/style.d.ts",
+        "hash": "7148482906230165887"
+      },
+      {
+        "file": "bit-with-nx/envs/tsconfig.json",
+        "hash": "16039317988325296848"
+      },
+      {
+        "file": "bit-with-nx/ui/.eslintrc.json",
+        "hash": "827210554198607272"
+      },
+      {
+        "file": "bit-with-nx/ui/button/button.composition.tsx",
+        "hash": "12897761060508357448"
+      },
+      {
+        "file": "bit-with-nx/ui/button/button.docs.mdx",
+        "hash": "14319812503350671963"
+      },
+      {
+        "file": "bit-with-nx/ui/button/button.spec.tsx",
+        "hash": "12335573171942120131"
+      },
+      {
+        "file": "bit-with-nx/ui/button/button.tsx",
+        "hash": "2841439975014907745"
+      },
+      {
+        "file": "bit-with-nx/ui/button/index.ts",
+        "hash": "15296479528281332977"
+      },
+      {
+        "file": "bit-with-nx/ui/tsconfig.json",
+        "hash": "9664126753671868178"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14110104359601719161"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "13176159168613212886"
+      },
+      {
+        "file": "package.json",
+        "hash": "3633626630985168366"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "7859040649871387945"
+      },
+      {
+        "file": "workspace.jsonc",
+        "hash": "8022151383770716595"
+      }
+    ]
+  }
+}

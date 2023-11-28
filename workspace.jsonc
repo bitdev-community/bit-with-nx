@@ -10,7 +10,7 @@
     /**
      * the name of the component workspace. used for development purposes.
      **/
-    "name": "ashanfernando.bit-with-nx",
+    "name": "my-workspace-name",
     /**
      * set the icon to be shown on the Bit server.
      **/
@@ -27,7 +27,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "my-scope",
+    "defaultScope": "ashanfernando.bit-with-nx",
     "resolveAspectsFromNodeModules": true,
     "resolveEnvsFromRoots": true
   },
@@ -39,11 +39,21 @@
      * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
      */
     "packageManager": "teambit.dependencies/pnpm",
-    "rootComponents": true,
     "policy": {
-      "dependencies": {},
+      "dependencies": {
+        "@teambit/defender.eslint-linter": "^1.0.15",
+        "@teambit/defender.jest-tester": "^1.0.12",
+        "@teambit/defender.prettier-formatter": "^1.0.7",
+        "@teambit/dependencies.modules.packages-excluder": "^1.0.8",
+        "@teambit/preview.react-preview": "^1.0.22",
+        "@teambit/react.mounter": "^1.0.3",
+        "@teambit/react.react-env": "^1.0.29",
+        "@teambit/typescript.typescript-compiler": "^2.0.13"
+      },
       "peerDependencies": {}
-    }
+    },
+    "linkCoreAspects": true,
+    "rootComponents": true
   },
   "teambit.workspace/workspace-config-files": {
     "enableWorkspaceConfigWrite": true

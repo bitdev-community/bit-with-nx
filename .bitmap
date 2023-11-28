@@ -9,5 +9,19 @@
  */
 
 {
+    "envs/my-react-env": {
+        "name": "envs/my-react-env",
+        "scope": "ashanfernando.bit-with-nx",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "bit-components/bit-with-nx/envs/my-react-env"
+    },
+    "ui/button": {
+        "name": "ui/button",
+        "scope": "ashanfernando.bit-with-nx",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "bit-components/bit-with-nx/ui/button"
+    },
     "$schema-version": "17.0.0"
 }
